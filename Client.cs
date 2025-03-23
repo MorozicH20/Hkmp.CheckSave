@@ -22,8 +22,6 @@ namespace Hkmp.CheckSave
         {
             Logger.Info("Client initialized");
 
-
-
             PlayerSave curentSave = new PlayerSave();
 
             var dllDir = System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);

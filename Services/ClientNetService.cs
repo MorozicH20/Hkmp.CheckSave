@@ -13,19 +13,31 @@ namespace Hkmp.CheckSave.Services
     {
         public ClientNetService(ILogger logger, Client addon, IClientApi clientApi)
         {
+            FileEdit logs = new FileEdit();
             var sender = clientApi.NetClient.GetNetworkSender<PlayerSavePacketId>(addon);
             clientApi.ClientManager.ConnectEvent += () =>
             {
                 logger.Info("Player connected, sending save to server");
-
-                sender.SendSingleData(PlayerSavePacketId.PlayerSaveClientData, new PlayerSavePacket
+                logs.Write("\nStart send player data");
+                try
                 {
-                    PlayerInfo = new PlayerInformation
+                    sender.SendSingleData(PlayerSavePacketId.PlayerSaveClientData, new PlayerSavePacket
                     {
-                        playerSave = new Models.PlayerSave(),
-                        PlayerName = clientApi.ClientManager.Username
-                    }
-                });
+                        PlayerInfo = new PlayerInformation
+                        {
+                            playerSave = new Models.PlayerSave(),
+                            PlayerName = clientApi.ClientManager.Username
+                        }
+                    });
+                    logs.Write("\tthe data has been sent successfully");
+
+                }
+                catch(Exception ex)
+                {
+                    logs.Write($"\t[ERROR] {ex}");
+
+                }
+
             };
         }
     }

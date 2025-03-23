@@ -19,6 +19,9 @@ namespace Hkmp.CheckSave.Services
 {
     internal class ServerNetService
     {
+        FileEdit logs = new FileEdit();
+
+
         private AllowedSave _AllowedSave = new AllowedSave();
         private Configuration _configuration;
 
@@ -93,7 +96,7 @@ namespace Hkmp.CheckSave.Services
             }
 
             _AllowedSave = JsonConvert.DeserializeObject<AllowedSave>(fileContents);
-            _logger.Info("ModList Updated");
+            _logger.Info("AllowedSave Updated");
         }
 
         private void HandleConfigChange()
@@ -116,11 +119,49 @@ namespace Hkmp.CheckSave.Services
 
         private void HandleSave(ushort id, PlayerSavePacket data, IServerApi serverApi)
         {
-            var clientSave = data.PlayerInfo.playerSave;
+            PlayerSave clientSave = null;
+            logs.Write("\nStart read player data:");
+            try
+            {
+                clientSave = data.PlayerInfo.playerSave;
+                logs.Write("\tead player data successfully");
 
-            var SaveInfo = CalculateSaveDiff(_AllowedSave, clientSave);
+            }
+            catch (Exception ex)
+            {
+                logs.Write($"\t[ERROR] {ex}");
 
-            var isMatch = CheckIsMatch(SaveInfo);
+            }
+            
+
+            SaveInfo SaveInfo = null;
+            logs.Write("\nStart CalculateSaveDiff:");
+            try
+            {
+                SaveInfo = CalculateSaveDiff(_AllowedSave, clientSave);
+                logs.Write("\tCalculateSaveDiff successfully");
+
+            }
+            catch (Exception ex)
+            {
+                logs.Write($"\t[ERROR] {ex}");
+
+            }
+
+            bool isMatch = false;
+            logs.Write("\nStart  CheckIsMatch:");
+            try
+            {
+                isMatch = CheckIsMatch(SaveInfo);
+                logs.Write("\tCheckIsMatch successfully");
+
+            }
+            catch (Exception ex)
+            {
+                logs.Write($"\t[ERROR] {ex}");
+
+            }
+            
 
             _logger.Info(!isMatch
                     ? $"{data.PlayerInfo.PlayerName}'s saves DO NOT match!"

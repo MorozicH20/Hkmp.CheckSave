@@ -21,13 +21,19 @@ namespace Hkmp.CheckSave
             var dllDir = System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             var configPath = Path.Combine(dllDir ?? string.Empty, "CheckSave_config.json");
             var AllowedSavePath = Path.Combine(dllDir ?? string.Empty, "AllowedSave.json");
+
+            var LogsPath = Path.Combine(dllDir ?? string.Empty, "Logs.txt");
             if (!File.Exists(configPath))
             {
+                File.WriteAllText(LogsPath, "Server started:\n\n");
+                Logger.Info("Created Logs file");
+
                 File.WriteAllText(configPath, JsonConvert.SerializeObject(new Configuration(), Newtonsoft.Json.Formatting.Indented));
                 Logger.Info("Created configuration file");
                 
-                File.WriteAllText(configPath, JsonConvert.SerializeObject(new AllowedSave(), Newtonsoft.Json.Formatting.Indented));
+                File.WriteAllText(AllowedSavePath, JsonConvert.SerializeObject(new AllowedSave(), Newtonsoft.Json.Formatting.Indented));
                 Logger.Info("Created AllowedSave file");
+                
             }
 
             // ReSharper disable once ObjectCreationAsStatement
