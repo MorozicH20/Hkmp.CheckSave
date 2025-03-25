@@ -25,8 +25,7 @@ namespace Hkmp.CheckSave
             var LogsPath = Path.Combine(dllDir ?? string.Empty, "Logs.txt");
             if (!File.Exists(configPath))
             {
-                File.WriteAllText(LogsPath, "Server started:\n\n");
-                Logger.Info("Created Logs file");
+                
 
                 File.WriteAllText(configPath, JsonConvert.SerializeObject(new Configuration(), Newtonsoft.Json.Formatting.Indented));
                 Logger.Info("Created configuration file");
@@ -35,6 +34,8 @@ namespace Hkmp.CheckSave
                 Logger.Info("Created AllowedSave file");
                 
             }
+            File.WriteAllText(LogsPath, "Server started:\n\n");
+            Logger.Info("Created Logs file");
 
             // ReSharper disable once ObjectCreationAsStatement
             new ServerNetService(Logger, this, serverApi);

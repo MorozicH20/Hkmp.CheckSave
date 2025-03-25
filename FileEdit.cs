@@ -10,7 +10,7 @@ namespace Hkmp.CheckSave
 {
     public class FileEdit
     {
-        private string file = ;
+        private string file;
 
         public FileEdit()
         {
@@ -22,14 +22,17 @@ namespace Hkmp.CheckSave
             file = path;
         }
 
-        public void Write(string text)
+        public void Write(string content)
         {
-            if (file != null)
+            try
             {
-                using (StreamWriter W = new StreamWriter(file))
-                {
-                    W.WriteLine(text);
-                }
+                // Используйте File.AppendAllText для добавления текста в файл
+                File.AppendAllText(file, content + Environment.NewLine);
+            }
+            catch(Exception ex)
+            {
+                File.AppendAllText(file, ex + Environment.NewLine);
             }
         }
     }
+}

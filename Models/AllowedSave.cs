@@ -176,5 +176,22 @@ namespace Hkmp.CheckSave.Models
             DashSlash,
             GreatSlash,
         }
+        //HKMirror name varible
+        public enum SkillNameVar
+        {
+            fireballLevel = 0,
+            quakeLevel,
+            screamLevel,
+            hasDash,
+            hasWallJump,
+            hasSuperDash,
+            hasDoubleJump,
+            hasAcidArmour,
+            hasShadowDash,
+            hasDreamNail,
+            hasCyclone,
+            hasDashSlash,
+            hasUpwardSlash,
+        }
     }
 }

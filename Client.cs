@@ -22,10 +22,10 @@ namespace Hkmp.CheckSave
         {
             Logger.Info("Client initialized");
 
-            PlayerSave curentSave = new PlayerSave();
+            //PlayerSave curentSave = new PlayerSave();
 
             var dllDir = System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            File.WriteAllText(Path.Combine(dllDir ?? string.Empty, "lastSave.json"), JsonConvert.SerializeObject(curentSave, Formatting.Indented));
+            File.WriteAllText(Path.Combine(dllDir ?? string.Empty, "lastSave.json"), "");
             Logger.Info("lastSave.json created");
 
             // ReSharper disable once ObjectCreationAsStatement

@@ -111,10 +111,6 @@ C:\Users\User\source\repos\Hkmp.CheckSave\Hkmp.CheckSave\bin\Debug\UnityEngine.X
 C:\Users\User\source\repos\Hkmp.CheckSave\Hkmp.CheckSave\bin\Debug\UnityEngine.ARModule.dll
 C:\Users\User\source\repos\Hkmp.CheckSave\Hkmp.CheckSave\bin\Debug\UnityEngine.InputModule.dll
 C:\Users\User\source\repos\Hkmp.CheckSave\Hkmp.CheckSave\bin\Debug\Assembly-CSharp.xml
-C:\Users\User\source\repos\Hkmp.CheckSave\Hkmp.CheckSave\bin\Debug\HKMirror.pdb
-C:\Users\User\source\repos\Hkmp.CheckSave\Hkmp.CheckSave\bin\Debug\HKMirror.xml
-C:\Users\User\source\repos\Hkmp.CheckSave\Hkmp.CheckSave\bin\Debug\HKMP.pdb
-C:\Users\User\source\repos\Hkmp.CheckSave\Hkmp.CheckSave\bin\Debug\HKMP.xml
 C:\Users\User\source\repos\Hkmp.CheckSave\Hkmp.CheckSave\bin\Debug\Microsoft.Extensions.Configuration.xml
 C:\Users\User\source\repos\Hkmp.CheckSave\Hkmp.CheckSave\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
 C:\Users\User\source\repos\Hkmp.CheckSave\Hkmp.CheckSave\bin\Debug\Microsoft.Extensions.Primitives.xml

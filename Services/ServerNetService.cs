@@ -22,7 +22,7 @@ namespace Hkmp.CheckSave.Services
         FileEdit logs = new FileEdit();
 
 
-        private AllowedSave _AllowedSave = new AllowedSave();
+        private AllowedSave _AllowedSave;
         private Configuration _configuration;
 
         // This is technically IDisposable but this is a notional singleton so we should be fine.
@@ -124,7 +124,7 @@ namespace Hkmp.CheckSave.Services
             try
             {
                 clientSave = data.PlayerInfo.playerSave;
-                logs.Write("\tead player data successfully");
+                logs.Write("\tread player data successfully");
 
             }
             catch (Exception ex)
@@ -132,10 +132,12 @@ namespace Hkmp.CheckSave.Services
                 logs.Write($"\t[ERROR] {ex}");
 
             }
-            
+
 
             SaveInfo SaveInfo = null;
             logs.Write("\nStart CalculateSaveDiff:");
+            logs.Write($"\n\tAllowedSave:\n{JsonConvert.SerializeObject(_AllowedSave, Formatting.Indented)}");
+            logs.Write($"\n\tclientSave\n{JsonConvert.SerializeObject(clientSave, Formatting.Indented)}");
             try
             {
                 SaveInfo = CalculateSaveDiff(_AllowedSave, clientSave);
@@ -161,7 +163,7 @@ namespace Hkmp.CheckSave.Services
                 logs.Write($"\t[ERROR] {ex}");
 
             }
-            
+
 
             _logger.Info(!isMatch
                     ? $"{data.PlayerInfo.PlayerName}'s saves DO NOT match!"
@@ -183,10 +185,17 @@ namespace Hkmp.CheckSave.Services
 
         private static Models.SaveInfo CalculateSaveDiff(AllowedSave allowedSaveServer, PlayerSave clientSave)
         {
-            // dicts for faster comparisons assuming huge mod lists.
-            bool equalityHealth = allowedSaveServer.maxHealth == clientSave.maxHealth;
-            bool equalityMP = allowedSaveServer.maxMP == clientSave.maxMP;
-            bool equalityGeo = allowedSaveServer.geo == clientSave.geo;
+            bool equalityHealth = true;
+            if (allowedSaveServer.maxHealth > 0)
+                equalityHealth = allowedSaveServer.maxHealth == clientSave.maxHealth;
+
+            bool equalityMP = true;
+            if (allowedSaveServer.maxMP > 0)
+                equalityMP = allowedSaveServer.maxMP == clientSave.maxMP;
+
+            bool equalityGeo = true;
+            if (allowedSaveServer.geo >= 0)
+                equalityGeo = allowedSaveServer.geo == clientSave.geo;
 
             List<Charm> extraCharms = new List<Charm>();
             List<Charm> missingCharms = new List<Charm>();
@@ -194,31 +203,35 @@ namespace Hkmp.CheckSave.Services
             List<Skill> extraSkills = new List<Skill>();
             List<Skill> missingSkills = new List<Skill>();
 
-
-            foreach (var charm in clientSave.Charms)
+            if (clientSave.Charms != null && allowedSaveServer.BannedCharms != null && allowedSaveServer.AllowedCharms != null)
             {
-                if (allowedSaveServer.BannedCharms.Contains(charm))
+                foreach (var charm in clientSave.Charms)
                 {
-                    extraCharms.Add(charm);
-                    break;
-                }
-                if (!allowedSaveServer.AllowedCharms.Contains(charm))
-                {
-                    missingCharms.Add(charm);
+                    if (allowedSaveServer.BannedCharms.Contains(charm))
+                    {
+                        extraCharms.Add(charm);
+                        break;
+                    }
+                    if (!allowedSaveServer.AllowedCharms.Contains(charm))
+                    {
+                        missingCharms.Add(charm);
+                    }
                 }
             }
-
-            foreach (var skill in clientSave.Skills)
+            if (clientSave.Skills != null && allowedSaveServer.BannedSkills != null && allowedSaveServer.AllowedSkills != null)
             {
-                if (allowedSaveServer.BannedSkills.Contains(skill))
+                foreach (var skill in clientSave.Skills)
                 {
-                    extraSkills.Add(skill);
-                    break;
-                }
-                if (!allowedSaveServer.AllowedSkills.Contains(skill))
-                {
-                    missingSkills.Add(skill);
-                    break;
+                    if (allowedSaveServer.BannedSkills.Contains(skill))
+                    {
+                        extraSkills.Add(skill);
+                        break;
+                    }
+                    if (!allowedSaveServer.AllowedSkills.Contains(skill))
+                    {
+                        missingSkills.Add(skill);
+                        break;
+                    }
                 }
             }
 
@@ -252,6 +265,18 @@ namespace Hkmp.CheckSave.Services
 
             api.ServerManager.SendMessage(player, isMatch ? "Save Diff Check: Match!" : "Save Diff Check: Mismatch!");
 
+            if (!info.EqualityHealth)
+            {
+                api.ServerManager.SendMessage(player, "your health is higher/lower than acceptable");
+            }
+            if (!info.EqualityMP)
+            {
+                api.ServerManager.SendMessage(player, "your soul stock higher/lower than acceptable");
+            }
+            if (!info.EqualityGeo)
+            {
+                api.ServerManager.SendMessage(player, "your geo stock is higher/lower than acceptable");
+            }
             if (info.ExtraCharms.Any())
             {
                 api.ServerManager.SendMessage(player, "Extra Charms:");
