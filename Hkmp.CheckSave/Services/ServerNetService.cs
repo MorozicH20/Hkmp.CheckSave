@@ -203,7 +203,7 @@ namespace Hkmp.CheckSave.Services
             List<Skill> extraSkills = new List<Skill>();
             List<Skill> missingSkills = new List<Skill>();
 
-            if (clientSave.Charms != null && allowedSaveServer.BannedCharms != null && allowedSaveServer.AllowedCharms != null)
+            if (clientSave.Charms != null && allowedSaveServer.BannedCharms != null && allowedSaveServer.RequiredCharms != null)
             {
                 foreach (var charm in clientSave.Charms)
                 {
@@ -212,13 +212,13 @@ namespace Hkmp.CheckSave.Services
                         extraCharms.Add(charm);
                         break;
                     }
-                    if (!allowedSaveServer.AllowedCharms.Contains(charm))
+                    if (!allowedSaveServer.RequiredCharms.Contains(charm))
                     {
                         missingCharms.Add(charm);
                     }
                 }
             }
-            if (clientSave.Skills != null && allowedSaveServer.BannedSkills != null && allowedSaveServer.AllowedSkills != null)
+            if (clientSave.Skills != null && allowedSaveServer.BannedSkills != null && allowedSaveServer.RequiredSkills != null)
             {
                 foreach (var skill in clientSave.Skills)
                 {
@@ -227,7 +227,7 @@ namespace Hkmp.CheckSave.Services
                         extraSkills.Add(skill);
                         break;
                     }
-                    if (!allowedSaveServer.AllowedSkills.Contains(skill))
+                    if (!allowedSaveServer.RequiredSkills.Contains(skill))
                     {
                         missingSkills.Add(skill);
                         break;

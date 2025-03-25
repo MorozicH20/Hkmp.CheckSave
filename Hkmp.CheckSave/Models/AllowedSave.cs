@@ -18,13 +18,13 @@ namespace Hkmp.CheckSave.Models
         public int maxMP;
 
         [JsonProperty("geo")]
-        public int geo;
+        public int geo = -1;
 
         [JsonProperty("allowedCharms")]
-        public Charm[] AllowedCharms { get; set; }
+        public Charm[] RequiredCharms { get; set; }
 
         [JsonProperty("allowedSkills")]
-        public Skill[] AllowedSkills { get; set; }
+        public Skill[] RequiredSkills { get; set; }
 
         [JsonProperty("bannedCharms")]
         public Charm[] BannedCharms { get; set; }
@@ -36,12 +36,12 @@ namespace Hkmp.CheckSave.Models
         /// <inheritdoc cref="IPacketData" />
         public void WriteData(IPacket packet)
         {
-            var length = (byte)AllowedCharms.Length;
+            var length = (byte)RequiredCharms.Length;
             packet.Write(length);
 
             for (var i = 0; i < length; i++)
             {
-                packet.Write((byte)AllowedCharms[i]);
+                packet.Write((byte)RequiredCharms[i]);
             }
 
             length = (byte)BannedCharms.Length;
@@ -52,12 +52,12 @@ namespace Hkmp.CheckSave.Models
                 packet.Write((byte)BannedCharms[i]);
             }
 
-            length = (byte)AllowedSkills.Length;
+            length = (byte)RequiredSkills.Length;
             packet.Write(length);
 
             for (var i = 0; i < length; i++)
             {
-                packet.Write((byte)AllowedSkills[i]);
+                packet.Write((byte)RequiredSkills[i]);
             }
 
             length = (byte)BannedSkills.Length;
@@ -73,11 +73,11 @@ namespace Hkmp.CheckSave.Models
         public void ReadData(IPacket packet)
         {
             var length = packet.ReadByte();
-            AllowedCharms = new Charm[length];
+            RequiredCharms = new Charm[length];
 
             for (var i = 0; i < length; i++)
             {
-                AllowedCharms[i] = (Charm)packet.ReadByte();
+                RequiredCharms[i] = (Charm)packet.ReadByte();
             }
 
             length = packet.ReadByte();
@@ -89,11 +89,11 @@ namespace Hkmp.CheckSave.Models
             }
 
             length = packet.ReadByte();
-            AllowedSkills = new Skill[length];
+            RequiredSkills = new Skill[length];
 
             for (var i = 0; i < length; i++)
             {
-                AllowedSkills[i] = (Skill)packet.ReadByte();
+                RequiredSkills[i] = (Skill)packet.ReadByte();
             }
 
 
