@@ -42,75 +42,75 @@ Upon first starting up, a files "CheckSave_config.json", "AllowedSave.json" will
 | bannedCharms        | list of banned charms                               | Charm[]     | null    |
 | bannedSkills        | list of banned skill                                | Skill[]     | null    |
 
-example:
-{
-  "maxHealth": 9,
-  "maxMP": 99,
-  "geo": -1,
-  "allowedCharms": [
-    "LongNail",
-    "ShamanStone"
-  ],
-  "allowedSkills": [
-    "ShadeSoul",
-    "DescendingDark",
-    "AbyssShriek"
-  ],
-  "bannedCharms": [
-    "WaywardCompass",
-    "DefendersCrest"
-  ],
-  "bannedSkills": [
-    "CycloneSlash",
-    "DashSlash",
-    "GreatSlash"
-  ]
-}
+example:\
+{\
+  "maxHealth": 9,\
+  "maxMP": 99,\
+  "geo": -1,\
+  "allowedCharms": [\
+    "LongNail",\
+    "ShamanStone"\
+  ],\
+  "allowedSkills": [\
+    "ShadeSoul",\
+    "DescendingDark",\
+    "AbyssShriek"\
+  ],\
+  "bannedCharms": [\
+    "WaywardCompass",\
+    "DefendersCrest"\
+  ],\
+  "bannedSkills": [\
+    "CycloneSlash",\
+    "DashSlash",\
+    "GreatSlash"\
+  ]\
+}\
 
 ### Enums for arrays
 
- public enum Charm          |        public enum Skill
- {                          |        {
-     GatheringSwarm = 1,    |            VengefulSpirit = 0,
-     WaywardCompass,        |            DesolateDive,
-     GrubSong,              |            HowlingWraiths,
-     StalwartShell,         |            ShadeSoul,
-     BaldurShell,           |            DescendingDark,
-     FuryOfTheFallen,       |            AbyssShriek,
-     QuickFocus,            |            MothwingCloak,
-     LifebloodHeart,        |            MantisClaw,
-     LifebloodCore,         |            CrystalHeart,
-     DefendersCrest,        |            MonarchWings,
-     Flukenest,             |            IsmasTear,    
-     ThornsOfAgony,         |            ShadeCloak,
-     MarkOfPride,           |            DreamNail,
-     SteadyBody,            |            CycloneSlash,
-     HeavyBlow,             |            DashSlash,
-     SharpShadow,           |            GreatSlash
-     SporeShroom,           |        }
-     LongNail,
-     ShamanStone,
-     SoulCatcher,
-     SoulEater,
-     GlowingWomb,
-     UnbreakableHeart,
-     UnbreakableGreed,
-     UnbreakableStrength,
-     NailmastersGlory,
-     JonisBlessing,
-     ShapeOfUnn,
-     Hiveblood,
-     Dreamwielder,
-     Dashmaster,
-     QuickSlash,
-     SpellTwister,
-     DeepFocus,
-     GrubberflysElegy,
-     Kingsoul,
-     Sprintmaster,
-     Dreamshield,
-     Weaversong,
-     Grimmchild,
-     CarefreeMelody
- }
+| public enum Charm          |        public enum Skill
+| {                          |        {
+|     GatheringSwarm = 1,    |            VengefulSpirit = 0,
+|     WaywardCompass,        |            DesolateDive,
+|     GrubSong,              |            HowlingWraiths,
+|     StalwartShell,         |            ShadeSoul,
+|     BaldurShell,           |            DescendingDark,
+|     FuryOfTheFallen,       |            AbyssShriek,
+|     QuickFocus,            |            MothwingCloak,
+|     LifebloodHeart,        |            MantisClaw,
+|     LifebloodCore,         |            CrystalHeart,
+|     DefendersCrest,        |            MonarchWings,
+|     Flukenest,             |            IsmasTear,    
+|     ThornsOfAgony,         |            ShadeCloak,
+|     MarkOfPride,           |            DreamNail,
+|     SteadyBody,            |            CycloneSlash,
+|     HeavyBlow,             |            DashSlash,
+|     SharpShadow,           |            GreatSlash
+|     SporeShroom,           |        }
+|     LongNail,              |
+|     ShamanStone,           |
+|     SoulCatcher,           |
+|     SoulEater,             |
+|     GlowingWomb,           |
+|     UnbreakableHeart,      |
+|     UnbreakableGreed,      |
+|     UnbreakableStrength,   |
+|     NailmastersGlory,      |
+|     JonisBlessing,         |
+|     ShapeOfUnn,            |
+|     Hiveblood,             |
+|     Dreamwielder,          |
+|     Dashmaster,            |
+|     QuickSlash,            |
+|     SpellTwister,          |
+|     DeepFocus,             |
+|     GrubberflysElegy,      |
+|     Kingsoul,              |
+|     Sprintmaster,          |
+|     Dreamshield,           |
+|     Weaversong,            |
+|     Grimmchild,            |
+|     CarefreeMelody         |
+| }                          |
  
