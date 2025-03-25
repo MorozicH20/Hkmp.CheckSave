@@ -65,52 +65,52 @@ example:\
     "DashSlash",\
     "GreatSlash"\
   ]\
-}\
+}
 
 ### Enums for arrays
 
-| public enum Charm          |        public enum Skill
-| {                          |        {
-|     GatheringSwarm = 1,    |            VengefulSpirit = 0,
-|     WaywardCompass,        |            DesolateDive,
-|     GrubSong,              |            HowlingWraiths,
-|     StalwartShell,         |            ShadeSoul,
-|     BaldurShell,           |            DescendingDark,
-|     FuryOfTheFallen,       |            AbyssShriek,
-|     QuickFocus,            |            MothwingCloak,
-|     LifebloodHeart,        |            MantisClaw,
-|     LifebloodCore,         |            CrystalHeart,
-|     DefendersCrest,        |            MonarchWings,
-|     Flukenest,             |            IsmasTear,    
-|     ThornsOfAgony,         |            ShadeCloak,
-|     MarkOfPride,           |            DreamNail,
-|     SteadyBody,            |            CycloneSlash,
-|     HeavyBlow,             |            DashSlash,
-|     SharpShadow,           |            GreatSlash
-|     SporeShroom,           |        }
-|     LongNail,              |
-|     ShamanStone,           |
-|     SoulCatcher,           |
-|     SoulEater,             |
-|     GlowingWomb,           |
-|     UnbreakableHeart,      |
-|     UnbreakableGreed,      |
-|     UnbreakableStrength,   |
-|     NailmastersGlory,      |
-|     JonisBlessing,         |
-|     ShapeOfUnn,            |
-|     Hiveblood,             |
-|     Dreamwielder,          |
-|     Dashmaster,            |
-|     QuickSlash,            |
-|     SpellTwister,          |
-|     DeepFocus,             |
-|     GrubberflysElegy,      |
-|     Kingsoul,              |
-|     Sprintmaster,          |
-|     Dreamshield,           |
-|     Weaversong,            |
-|     Grimmchild,            |
-|     CarefreeMelody         |
-| }                          |
+ public enum Charm                  public enum Skill\
+ {                                  {\
+     GatheringSwarm = 1,                VengefulSpirit = 0,\
+     WaywardCompass,                    DesolateDive,\
+     GrubSong,                          HowlingWraiths,\
+     StalwartShell,                     ShadeSoul,\
+     BaldurShell,                       DescendingDark,\
+     FuryOfTheFallen,                   AbyssShriek,\
+     QuickFocus,                        MothwingCloak,\
+     LifebloodHeart,                    MantisClaw,\
+     LifebloodCore,                     CrystalHeart,\
+     DefendersCrest,                    MonarchWings,\
+     Flukenest,                         IsmasTear,\
+     ThornsOfAgony,                     ShadeCloak,\
+     MarkOfPride,                       DreamNail,\
+     SteadyBody,                        CycloneSlash,\
+     HeavyBlow,                         DashSlash,\
+     SharpShadow,                       GreatSlash\
+     SporeShroom,                   }\
+     LongNail,\
+     ShamanStone,\
+     SoulCatcher,\
+     SoulEater,\
+     GlowingWomb,\
+     UnbreakableHeart,\
+     UnbreakableGreed,\
+     UnbreakableStrength,\
+     NailmastersGlory,\
+     JonisBlessing,\
+     ShapeOfUnn,\
+     Hiveblood,\
+     Dreamwielder,\
+     Dashmaster,\
+     QuickSlash,\
+     SpellTwister,\
+     DeepFocus,\
+     GrubberflysElegy,\
+     Kingsoul,\
+     Sprintmaster,\
+     Dreamshield,\
+     Weaversong,\
+     Grimmchild,\
+     CarefreeMelody\
+ }\
  
