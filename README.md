@@ -68,6 +68,56 @@ example:\
 }
 
 ### Enums for arrays
+|  public enum Charm  | public enum Skill |
+| ------------------- | ----------------- |
+| GatheringSwarm      | VengefulSpirit    |
+| WaywardCompass      | DesolateDive      |
+| GrubSong            | HowlingWraiths    |
+| StalwartShell       | ShadeSoul         |
+| BaldurShell         | DescendingDark    |
+| FuryOfTheFallen     | AbyssShriek       |
+| QuickFocus          | MothwingCloak     |
+| LifebloodHeart      | MantisClaw        |
+| LifebloodCore       | CrystalHeart      |
+| DefendersCrest      | MonarchWings      |
+| Flukenest           | IsmasTear         |
+| ThornsOfAgony       | DreamNail         |
+| MarkOfPride         | CycloneSlash      |
+| SteadyBody          | DashSlash         |
+| HeavyBlow           | GreatSlash        |
+| SharpShadow         |   |
+| SporeShroom         |   |
+| LongNail            |   |
+| ShamanStone         |   |
+| SoulCatcher         |   |
+| SoulEater           |   |
+| GlowingWomb         |   |
+| UnbreakableHeart    |   |
+| UnbreakableGreed    |   |
+| UnbreakableStrength |   |
+| NailmastersGlory    |   |
+| JonisBlessing       |   |
+| ShapeOfUnn          |   |
+| Hiveblood           |   |
+| Dreamwielder        |   |
+| Dashmaster          |   |
+| QuickSlash          |   |
+| SpellTwister        |   |
+| DeepFocus           |   |
+| GrubberflysElegy    |   |
+| Kingsoul            |   |
+| Sprintmaster        |   |
+| Dreamshield         |   |
+| Weaversong          |   |
+| Grimmchild          |   |
+| CarefreeMelody      |   |
+
+
+
+
+
+
+
 
  public enum Charm                  public enum Skill\
  {                                  {\
