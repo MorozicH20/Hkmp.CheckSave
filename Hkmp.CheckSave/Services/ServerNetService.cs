@@ -175,11 +175,12 @@ namespace Hkmp.CheckSave.Services
             {
                 // Disconnecting in real time causes a weird race condition as the player is still in it's connection event.
                 // delaying this action arbitrarily fixes it.
-                Task.Run(async () =>
-                {
-                    await Task.Delay(500).ConfigureAwait(false);
-                    serverApi.ServerManager.DisconnectPlayer(id, DisconnectReason.Kicked);
-                });
+                if (id != 0)
+                    Task.Run(async () =>
+                    {
+                        await Task.Delay(500).ConfigureAwait(false);
+                        serverApi.ServerManager.DisconnectPlayer(id, DisconnectReason.Kicked);
+                    });
             }
         }
 
