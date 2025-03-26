@@ -41,8 +41,9 @@ Upon first starting up, a files "CheckSave_config.json", "AllowedSave.json" will
 | requiredSkills      | list of required skill                              | Skill[]     | null    |
 | bannedCharms        | list of banned charms                               | Charm[]     | null    |
 | bannedSkills        | list of banned skill                                | Skill[]     | null    |
+
+### example:
 ```json
-example:\
 {
   "maxHealth": 9,
   "maxMP": 99,
