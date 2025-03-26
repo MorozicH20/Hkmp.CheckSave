@@ -222,7 +222,7 @@ namespace Hkmp.CheckSave.Services
             if (clientSave.Charms != null)
             {
 
-                if (allowedSaveServer.BannedCharms != null)
+                if (allowedSaveServer.BannedCharms != null && allowedSaveServer.BannedCharms.Length>0)
                     foreach (var charm in clientSave.Charms)
                     {
 
@@ -233,7 +233,7 @@ namespace Hkmp.CheckSave.Services
 
                     }
 
-                if (allowedSaveServer.RequiredCharms != null)
+                if (allowedSaveServer.RequiredCharms != null && allowedSaveServer.RequiredCharms.Length > 0)
                     foreach (var charm in allowedSaveServer.RequiredCharms)
                     {
                         if (!clientSave.Charms.Contains(charm))
@@ -246,7 +246,7 @@ namespace Hkmp.CheckSave.Services
 
             if (clientSave.Skills != null)
             {
-                if (allowedSaveServer.BannedSkills != null)
+                if (allowedSaveServer.BannedSkills != null && allowedSaveServer.BannedSkills.Length > 0)
                     foreach (var skill in clientSave.Skills)
                     {
                         if (allowedSaveServer.BannedSkills.Contains(skill))
@@ -255,7 +255,7 @@ namespace Hkmp.CheckSave.Services
                         }
                     }
 
-                if (allowedSaveServer.RequiredSkills != null)
+                if (allowedSaveServer.RequiredSkills != null && allowedSaveServer.RequiredSkills.Length > 0)
                     foreach (var skill in allowedSaveServer.RequiredSkills)
                     {
                         if (!clientSave.Skills.Contains(skill))
