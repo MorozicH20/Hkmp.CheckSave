@@ -179,7 +179,7 @@ namespace Hkmp.CheckSave.Services
                 {
                     if (player.IpAddressString == "127.0.0.1")
                     {  
-                        if(data.PlayerInfo.PlayerName == player.Username)
+                        if(data.PlayerInfo.PlayerName != player.Username)
                         {
                             logs.Write($"{serverApi.ServerManager.Players.ToList()[0].Username}, {data.PlayerInfo.PlayerName}");
                             Task.Run(async () =>

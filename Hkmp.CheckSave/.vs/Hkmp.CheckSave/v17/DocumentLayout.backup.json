@@ -11,24 +11,24 @@
       "RelativeMoniker": "D:0:0:{30E2396B-42EF-4E62-81E6-5386288D337A}|Hkmp.CheckSave.csproj|solutionrelative:packets\\playersavepacket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{30E2396B-42EF-4E62-81E6-5386288D337A}|Hkmp.CheckSave.csproj|C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\services\\clientnetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{30E2396B-42EF-4E62-81E6-5386288D337A}|Hkmp.CheckSave.csproj|solutionrelative:services\\clientnetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{30E2396B-42EF-4E62-81E6-5386288D337A}|Hkmp.CheckSave.csproj|C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{30E2396B-42EF-4E62-81E6-5386288D337A}|Hkmp.CheckSave.csproj|solutionrelative:client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{30E2396B-42EF-4E62-81E6-5386288D337A}|Hkmp.CheckSave.csproj|C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\models\\saveinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{30E2396B-42EF-4E62-81E6-5386288D337A}|Hkmp.CheckSave.csproj|solutionrelative:models\\saveinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{30E2396B-42EF-4E62-81E6-5386288D337A}|Hkmp.CheckSave.csproj|c:\\users\\user\\source\\repos\\hkmp.checksave\\hkmp.checksave\\hkmp.checksave\\models\\allowedsave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{30E2396B-42EF-4E62-81E6-5386288D337A}|Hkmp.CheckSave.csproj|solutionrelative:models\\allowedsave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{30E2396B-42EF-4E62-81E6-5386288D337A}|Hkmp.CheckSave.csproj|C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\models\\playersave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{30E2396B-42EF-4E62-81E6-5386288D337A}|Hkmp.CheckSave.csproj|solutionrelative:models\\playersave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30E2396B-42EF-4E62-81E6-5386288D337A}|Hkmp.CheckSave.csproj|C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\models\\saveinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30E2396B-42EF-4E62-81E6-5386288D337A}|Hkmp.CheckSave.csproj|solutionrelative:models\\saveinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30E2396B-42EF-4E62-81E6-5386288D337A}|Hkmp.CheckSave.csproj|C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\services\\clientnetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30E2396B-42EF-4E62-81E6-5386288D337A}|Hkmp.CheckSave.csproj|solutionrelative:services\\clientnetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30E2396B-42EF-4E62-81E6-5386288D337A}|Hkmp.CheckSave.csproj|C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30E2396B-42EF-4E62-81E6-5386288D337A}|Hkmp.CheckSave.csproj|solutionrelative:client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{30E2396B-42EF-4E62-81E6-5386288D337A}|Hkmp.CheckSave.csproj|C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -75,7 +75,7 @@
               "RelativeDocumentMoniker": "Services\\ServerNetService.cs",
               "ToolTip": "C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\Services\\ServerNetService.cs",
               "RelativeToolTip": "Services\\ServerNetService.cs",
-              "ViewState": "AgIAAKcAAAAAAAAAAAAqwLEAAABKAAAAAAAAAA==",
+              "ViewState": "AgIAAK0AAAAAAAAAAAAqwLMAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-17T11:20:04.707Z",
               "EditorCaption": ""
@@ -95,7 +95,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Client.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\Client.cs",
               "RelativeDocumentMoniker": "Client.cs",
@@ -108,26 +108,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "AllowedSave.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\Models\\AllowedSave.cs",
               "RelativeDocumentMoniker": "Models\\AllowedSave.cs",
               "ToolTip": "C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\Models\\AllowedSave.cs",
               "RelativeToolTip": "Models\\AllowedSave.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAiwJ8AAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJ8AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-17T10:43:30.519Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "PlayerSave.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\Models\\PlayerSave.cs",
               "RelativeDocumentMoniker": "Models\\PlayerSave.cs",
               "ToolTip": "C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\Models\\PlayerSave.cs",
               "RelativeToolTip": "Models\\PlayerSave.cs",
-              "ViewState": "AgIAAJoAAAAAAAAAAAAQwKgAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAAKgAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-14T08:37:49.315Z",
               "EditorCaption": ""
@@ -146,7 +146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "ClientNetService.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\Services\\ClientNetService.cs",
               "RelativeDocumentMoniker": "Services\\ClientNetService.cs",
@@ -165,7 +165,7 @@
               "RelativeDocumentMoniker": "Packets\\PlayerSavePacket.cs",
               "ToolTip": "C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\Packets\\PlayerSavePacket.cs",
               "RelativeToolTip": "Packets\\PlayerSavePacket.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowBEAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBEAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-17T11:34:37.679Z",
               "EditorCaption": ""
