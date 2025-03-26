@@ -65,17 +65,17 @@ namespace Hkmp.CheckSave.Models
                         switch (Convert.ToInt32(f.GetValue(typeof(int))))
                         {
                             case 0:
-                                SkillValues.Add((Skill)0, false);
+                                SkillValues.Add(Skill.VengefulSpirit, false);
                                 SkillValues.Add((Skill)3, false);
                                 break;
 
                             case 1:
-                                SkillValues.Add((Skill)0, true);
+                                SkillValues.Add(Skill.VengefulSpirit, true);
                                 SkillValues.Add((Skill)3, false);
                                 break;
 
                             case 2:
-                                SkillValues.Add((Skill)0, true);
+                                SkillValues.Add(Skill.VengefulSpirit, true);
                                 SkillValues.Add((Skill)3, true);
                                 break;
                         }

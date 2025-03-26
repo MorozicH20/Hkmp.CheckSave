@@ -47,11 +47,11 @@ example:\
   "maxHealth": 9,\
   "maxMP": 99,\
   "geo": -1,\
-  "allowedCharms": [\
+  "requiredCharms": [\
     "LongNail",\
     "ShamanStone"\
   ],\
-  "allowedSkills": [\
+  "requiredSkills": [\
     "ShadeSoul",\
     "DescendingDark",\
     "AbyssShriek"\

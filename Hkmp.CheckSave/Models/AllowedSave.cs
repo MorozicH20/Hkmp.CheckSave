@@ -20,10 +20,10 @@ namespace Hkmp.CheckSave.Models
         [JsonProperty("geo")]
         public int geo = -1;
 
-        [JsonProperty("allowedCharms")]
+        [JsonProperty("requiredCharms")]
         public Charm[] RequiredCharms { get; set; }
 
-        [JsonProperty("allowedSkills")]
+        [JsonProperty("requiredSkills")]
         public Skill[] RequiredSkills { get; set; }
 
         [JsonProperty("bannedCharms")]

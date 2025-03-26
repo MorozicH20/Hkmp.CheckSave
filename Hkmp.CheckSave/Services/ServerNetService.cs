@@ -171,7 +171,7 @@ namespace Hkmp.CheckSave.Services
 
             MessageModDiscrepancies(serverApi, id, SaveInfo, isMatch);
 
-            if (!isMatch && _configuration.KickOnMistmatch)
+            if (!isMatch && _configuration.KickOnMistmatch && id != 0)
             {
                 // Disconnecting in real time causes a weird race condition as the player is still in it's connection event.
                 // delaying this action arbitrarily fixes it.
@@ -185,17 +185,22 @@ namespace Hkmp.CheckSave.Services
 
         private static Models.SaveInfo CalculateSaveDiff(AllowedSave allowedSaveServer, PlayerSave clientSave)
         {
+            FileEdit logs = new FileEdit();
+
             bool equalityHealth = true;
             if (allowedSaveServer.maxHealth > 0)
                 equalityHealth = allowedSaveServer.maxHealth == clientSave.maxHealth;
+
 
             bool equalityMP = true;
             if (allowedSaveServer.maxMP > 0)
                 equalityMP = allowedSaveServer.maxMP == clientSave.maxMP;
 
+
             bool equalityGeo = true;
             if (allowedSaveServer.geo >= 0)
                 equalityGeo = allowedSaveServer.geo == clientSave.geo;
+
 
             List<Charm> extraCharms = new List<Charm>();
             List<Charm> missingCharms = new List<Charm>();
@@ -203,36 +208,50 @@ namespace Hkmp.CheckSave.Services
             List<Skill> extraSkills = new List<Skill>();
             List<Skill> missingSkills = new List<Skill>();
 
-            if (clientSave.Charms != null && allowedSaveServer.BannedCharms != null && allowedSaveServer.RequiredCharms != null)
+            if (clientSave.Charms != null)
             {
-                foreach (var charm in clientSave.Charms)
-                {
-                    if (allowedSaveServer.BannedCharms.Contains(charm))
+
+                if (allowedSaveServer.BannedCharms != null)
+                    foreach (var charm in clientSave.Charms)
                     {
-                        extraCharms.Add(charm);
-                        break;
+
+                        if (allowedSaveServer.BannedCharms.Contains(charm))
+                        {
+                            extraCharms.Add(charm);
+                        }
+
                     }
-                    if (!allowedSaveServer.RequiredCharms.Contains(charm))
+
+                if (allowedSaveServer.RequiredCharms != null)
+                    foreach (var charm in allowedSaveServer.RequiredCharms)
                     {
-                        missingCharms.Add(charm);
+                        if (!clientSave.Charms.Contains(charm))
+                        {
+                            missingCharms.Add(charm);
+                        }
                     }
-                }
             }
-            if (clientSave.Skills != null && allowedSaveServer.BannedSkills != null && allowedSaveServer.RequiredSkills != null)
+
+
+            if (clientSave.Skills != null)
             {
-                foreach (var skill in clientSave.Skills)
-                {
-                    if (allowedSaveServer.BannedSkills.Contains(skill))
+                if (allowedSaveServer.BannedSkills != null)
+                    foreach (var skill in clientSave.Skills)
                     {
-                        extraSkills.Add(skill);
-                        break;
+                        if (allowedSaveServer.BannedSkills.Contains(skill))
+                        {
+                            extraSkills.Add(skill);
+                        }
                     }
-                    if (!allowedSaveServer.RequiredSkills.Contains(skill))
+
+                if (allowedSaveServer.RequiredSkills != null)
+                    foreach (var skill in allowedSaveServer.RequiredSkills)
                     {
-                        missingSkills.Add(skill);
-                        break;
+                        if (!clientSave.Skills.Contains(skill))
+                        {
+                            missingSkills.Add(skill);
+                        }
                     }
-                }
             }
 
             return new Models.SaveInfo
