@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{30E2396B-42EF-4E62-81E6-5386288D337A}|Hkmp.CheckSave.csproj|C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\services\\clientnetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30E2396B-42EF-4E62-81E6-5386288D337A}|Hkmp.CheckSave.csproj|solutionrelative:services\\clientnetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{30E2396B-42EF-4E62-81E6-5386288D337A}|Hkmp.CheckSave.csproj|C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\services\\servernetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{30E2396B-42EF-4E62-81E6-5386288D337A}|Hkmp.CheckSave.csproj|solutionrelative:services\\servernetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -50,10 +54,6 @@
       "RelativeMoniker": "D:0:0:{30E2396B-42EF-4E62-81E6-5386288D337A}|Hkmp.CheckSave.csproj|solutionrelative:packets\\playersavepacket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{30E2396B-42EF-4E62-81E6-5386288D337A}|Hkmp.CheckSave.csproj|C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\services\\clientnetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{30E2396B-42EF-4E62-81E6-5386288D337A}|Hkmp.CheckSave.csproj|solutionrelative:services\\clientnetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{30E2396B-42EF-4E62-81E6-5386288D337A}|Hkmp.CheckSave.csproj|C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{30E2396B-42EF-4E62-81E6-5386288D337A}|Hkmp.CheckSave.csproj|solutionrelative:packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
@@ -65,35 +65,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ServerNetService.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\Services\\ServerNetService.cs",
               "RelativeDocumentMoniker": "Services\\ServerNetService.cs",
               "ToolTip": "C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\Services\\ServerNetService.cs",
               "RelativeToolTip": "Services\\ServerNetService.cs",
-              "ViewState": "AgIAAPkAAAAAAAAAAAAiwPMAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAKMAAAAAAAAAAAAcwLQAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-17T11:20:04.707Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Hkmp.CheckSave",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave.csproj",
-              "RelativeDocumentMoniker": "Hkmp.CheckSave.csproj",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave.csproj",
-              "RelativeToolTip": "Hkmp.CheckSave.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-03-25T16:33:13.545Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "SaveInfo.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\Models\\SaveInfo.cs",
               "RelativeDocumentMoniker": "Models\\SaveInfo.cs",
@@ -105,7 +94,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Client.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\Client.cs",
               "RelativeDocumentMoniker": "Client.cs",
@@ -117,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "FileEdit.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\FileEdit.cs",
               "RelativeDocumentMoniker": "FileEdit.cs",
@@ -129,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "HkMod.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\HkMod.cs",
               "RelativeDocumentMoniker": "HkMod.cs",
@@ -141,7 +130,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "AllowedSave.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\Models\\AllowedSave.cs",
               "RelativeDocumentMoniker": "Models\\AllowedSave.cs",
@@ -154,7 +143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "PlayerSave.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\Models\\PlayerSave.cs",
               "RelativeDocumentMoniker": "Models\\PlayerSave.cs",
@@ -167,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Server.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\Server.cs",
               "RelativeDocumentMoniker": "Server.cs",
@@ -179,7 +168,31 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClientNetService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\Services\\ClientNetService.cs",
+              "RelativeDocumentMoniker": "Services\\ClientNetService.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\Services\\ClientNetService.cs",
+              "RelativeToolTip": "Services\\ClientNetService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAYwBMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T13:01:22.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "Hkmp.CheckSave",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave.csproj",
+              "RelativeDocumentMoniker": "Hkmp.CheckSave.csproj",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave.csproj",
+              "RelativeToolTip": "Hkmp.CheckSave.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-25T16:33:13.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "ModInfo.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\ModInfo.cs",
               "RelativeDocumentMoniker": "ModInfo.cs",
@@ -191,7 +204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "PlayerSavePacket.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\Packets\\PlayerSavePacket.cs",
               "RelativeDocumentMoniker": "Packets\\PlayerSavePacket.cs",
@@ -203,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Configuration.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\Configuration.cs",
               "RelativeDocumentMoniker": "Configuration.cs",
@@ -212,18 +225,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-09T17:00:38.712Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ClientNetService.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\Services\\ClientNetService.cs",
-              "RelativeDocumentMoniker": "Services\\ClientNetService.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Hkmp.CheckSave\\Hkmp.CheckSave\\Hkmp.CheckSave\\Services\\ClientNetService.cs",
-              "RelativeToolTip": "Services\\ClientNetService.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAmwBwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T13:01:22.949Z"
             },
             {
               "$type": "Document",

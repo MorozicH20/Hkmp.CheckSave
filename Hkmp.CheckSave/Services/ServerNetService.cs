@@ -171,7 +171,7 @@ namespace Hkmp.CheckSave.Services
 
             MessageModDiscrepancies(serverApi, id, SaveInfo, isMatch);
 
-            if (!isMatch && _configuration.KickOnMistmatch && id != 0)
+            if (!isMatch && _configuration.KickOnMistmatch)
             {
                 // Disconnecting in real time causes a weird race condition as the player is still in it's connection event.
                 // delaying this action arbitrarily fixes it.
