@@ -46,7 +46,6 @@ namespace Hkmp.CheckSave.Services
                 }
 
             };
-
             ModHooks.AfterSavegameLoadHook += (SaveGameData) =>
             {
                 if (!(clientApi.ClientManager.GetPlayer(0) == clientApi))
