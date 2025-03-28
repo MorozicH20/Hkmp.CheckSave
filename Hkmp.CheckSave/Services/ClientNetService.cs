@@ -1,7 +1,6 @@
 ﻿using Hkmp.Api.Client;
 using Hkmp.CheckSave.Models;
 using Hkmp.CheckSave.Packets;
-using Hkmp.Logging;
 using System;
 using System.Reflection;
 using Modding;
@@ -83,7 +82,6 @@ namespace Hkmp.CheckSave.Services
                 logger.Info("Player connected, sending save to server");
                 logs.Write("\nStart send player data");
                 clientSave.LoadData();
-
                 try
                 {
                     sender.SendSingleData(PlayerSavePacketId.PlayerSaveClientData, new PlayerSavePacket

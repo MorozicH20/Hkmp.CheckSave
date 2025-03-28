@@ -1,11 +1,7 @@
 ﻿using Hkmp.Networking.Packet;
 using Newtonsoft.Json.Converters;
 using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Hkmp.CheckSave.Models
 {
@@ -21,16 +17,16 @@ namespace Hkmp.CheckSave.Models
         public int geo = -1;
 
         [JsonProperty("requiredCharms")]
-        public Charm[] RequiredCharms { get; set; }
+        public Charm[] RequiredCharms;
 
         [JsonProperty("requiredSkills")]
-        public Skill[] RequiredSkills { get; set; }
+        public Skill[] RequiredSkills;
 
         [JsonProperty("bannedCharms")]
-        public Charm[] BannedCharms { get; set; }
+        public Charm[] BannedCharms;
 
         [JsonProperty("bannedSkills")]
-        public Skill[] BannedSkills { get; set; }
+        public Skill[] BannedSkills;
 
 
         /// <inheritdoc cref="IPacketData" />

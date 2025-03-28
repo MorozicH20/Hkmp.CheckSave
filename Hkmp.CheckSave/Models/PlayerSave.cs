@@ -1,32 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Hkmp.Networking.Packet;
 using static Hkmp.CheckSave.Models.AllowedSave;
 using HKMirror;
 using System.Reflection;
 using System.Diagnostics;
-using HKMirror.Hooks.ILHooks;
 
 namespace Hkmp.CheckSave.Models
 {
     public class PlayerSave
     {
-        //[JsonProperty("maxHealth")]
+        public string ip;
+
         public int maxHealth;
 
-        //[JsonProperty("maxMP")]
         public int maxMP;
 
-        //[JsonProperty("geo")]
         public int geo;
 
-        //[JsonProperty("Charms")]
         public List<Charm> Charms;
 
-        //[JsonProperty("Skills")]
         public List<Skill> Skills;
 
         public void LoadData()

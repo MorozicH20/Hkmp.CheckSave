@@ -1,6 +1,4 @@
-﻿//using Hkmp.ModDiff.Models;
-
-namespace Hkmp.CheckSave
+﻿namespace Hkmp.CheckSave
 {
     /// <summary>
     /// App configuration

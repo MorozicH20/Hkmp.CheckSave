@@ -5,11 +5,8 @@ using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 using Hkmp.Api.Server;
-using Hkmp.CheckSave;
 using Hkmp.Logging;
-//using Hkmp.CheckSave.Extensions;
 using Hkmp.CheckSave.Models;
-//using Hkmp.CheckSave.Packets;
 using Hkmp.Networking.Packet.Data;
 using Newtonsoft.Json;
 using Hkmp.CheckSave.Packets;
@@ -27,7 +24,7 @@ namespace Hkmp.CheckSave.Services
 
         // This is technically IDisposable but this is a notional singleton so we should be fine.
         // ReSharper disable once PrivateFieldCanBeConvertedToLocalVariable
-        private readonly FileSystemWatcher _modListWatcher;
+        private readonly FileSystemWatcher _playerSaveWatcher;
         private readonly ILogger _logger;
 
         private static readonly string DllDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
@@ -41,12 +38,12 @@ namespace Hkmp.CheckSave.Services
             receiver.RegisterPacketHandler<PlayerSavePacket>(
                 PlayerSavePacketId.PlayerSaveClientData, (id, data) => HandleSave(id, data, serverApi));
 
-            _modListWatcher = new FileSystemWatcher(DllDirectory ?? string.Empty);
-            _modListWatcher.IncludeSubdirectories = false;
-            _modListWatcher.Changed += OnFileChanged;
-            _modListWatcher.Created += OnFileChanged;
-            _modListWatcher.Renamed += OnFileChanged;
-            _modListWatcher.EnableRaisingEvents = true;
+            _playerSaveWatcher = new FileSystemWatcher(DllDirectory ?? string.Empty);
+            _playerSaveWatcher.IncludeSubdirectories = false;
+            _playerSaveWatcher.Changed += OnFileChanged;
+            _playerSaveWatcher.Created += OnFileChanged;
+            _playerSaveWatcher.Renamed += OnFileChanged;
+            _playerSaveWatcher.EnableRaisingEvents = true;
             HandleConfigChange();
             HandlePlayerSaveChange();
         }
