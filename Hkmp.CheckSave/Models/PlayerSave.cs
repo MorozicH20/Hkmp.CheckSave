@@ -9,7 +9,6 @@ namespace Hkmp.CheckSave.Models
 {
     public class PlayerSave
     {
-        public string ip;
 
         public int maxHealth;
 
@@ -112,34 +111,34 @@ namespace Hkmp.CheckSave.Models
                         }
                         break;
                     case "hasDash":
-                        SkillValues.Add((Skill)6, true);
+                        SkillValues.Add((Skill)6, Convert.ToBoolean(f.GetValue(typeof(bool))));
                         break;
                     case "hasWallJump":
-                        SkillValues.Add((Skill)7, true);
+                        SkillValues.Add((Skill)7, Convert.ToBoolean(f.GetValue(typeof(bool))));
                         break;
                     case "hasSuperDash":
-                        SkillValues.Add((Skill)8, true);
+                        SkillValues.Add((Skill)8, Convert.ToBoolean(f.GetValue(typeof(bool))));
                         break;
                     case "hasDoubleJump":
-                        SkillValues.Add((Skill)9, true);
+                        SkillValues.Add((Skill)9, Convert.ToBoolean(f.GetValue(typeof(bool))));
                         break;
                     case "hasAcidArmour":
-                        SkillValues.Add((Skill)10, true);
+                        SkillValues.Add((Skill)10, Convert.ToBoolean(f.GetValue(typeof(bool))));
                         break;
                     case "hasShadowDash":
-                        SkillValues.Add((Skill)11, true);
+                        SkillValues.Add((Skill)11, Convert.ToBoolean(f.GetValue(typeof(bool))));
                         break;
                     case "hasDreamNail":
-                        SkillValues.Add((Skill)12, true);
+                        SkillValues.Add((Skill)12, Convert.ToBoolean(f.GetValue(typeof(bool))));
                         break;
                     case "hasCyclone":
-                        SkillValues.Add((Skill)13, true);
+                        SkillValues.Add((Skill)13, Convert.ToBoolean(f.GetValue(typeof(bool))));
                         break;
                     case "hasDashSlash":
-                        SkillValues.Add((Skill)14, true);
+                        SkillValues.Add((Skill)14, Convert.ToBoolean(f.GetValue(typeof(bool))));
                         break;
                     case "hasUpwardSlash":
-                        SkillValues.Add((Skill)15, true);
+                        SkillValues.Add((Skill)15, Convert.ToBoolean(f.GetValue(typeof(bool))));
                         break;
 
                 }
